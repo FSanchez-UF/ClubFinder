@@ -1,0 +1,27 @@
+{
+  "name": "clubfinder",
+  "version": "1.0.0",
+  "description": "Skill/interest survey that will evaluate which UF club will pique the user's interest",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BCorbin825/ClubFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BCorbin825/ClubFinder/issues"
+  },
+  "homepage": "https://github.com/BCorbin825/ClubFinder#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.2.7"
+  },
+  "type": "module"
+}
