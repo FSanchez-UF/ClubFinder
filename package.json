@@ -4,7 +4,10 @@
   "description": "Skill/interest survey that will evaluate which UF club will pique the user's interest",
   "main": "server.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "server": "nodemon ProgramCode/backend/server/server.js",
+    "client": "npm start --prefix ProgramCode/frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,8 @@
     "express-async-handler": "^1.2.0",
     "mongoose": "^6.2.7"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
 }
