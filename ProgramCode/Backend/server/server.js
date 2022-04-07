@@ -10,13 +10,12 @@ connectDB()
 
 //dotenv config
 dotenv.config({path: '../../../.env'})
-console.log(process.env.PORT)
+
 const app = express()
 
-//
 app.use('/Club_Data', club_routes)
 
 const PORT = process.env.PORT || 5000
 
 //Express js listen method to run project on http://localhost:5000
-app.listen(PORT, console.log(`App is running in ${process.env.NODE} mode on port ${PORT}`))
+app.listen(PORT, console.log(`App is running in ${process.env.NODE_ENV} mode on port ${PORT}`))
