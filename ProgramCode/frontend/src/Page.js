@@ -1,6 +1,7 @@
 import React from 'react'
 import Name from './Images/Name1.png'
 import Categories from './Categories'
+import Submit from './Submit'
 
 export default function Page({categories, selectCategory}) {
   return (
@@ -12,6 +13,7 @@ export default function Page({categories, selectCategory}) {
           <label> Categories </label>
         </div>
         <Categories categories={categories} selectCategory={selectCategory} />
+        <Submit />
     </div>
   )
 }

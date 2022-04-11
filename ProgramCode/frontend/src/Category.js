@@ -5,7 +5,7 @@ export default function Category({ category, selectCategory }) {
     selectCategory(category.name)
   }
   return (
-    <div>
+    <div className='category'>
       <input type="checkbox" checked={category.selected} onChange={CheckboxToggle} />
       {category.name}
     </div>

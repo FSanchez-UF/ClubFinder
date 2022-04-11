@@ -23,6 +23,11 @@ img {
 
 .label {
     padding : 13px;
+    color : white;
+}
+
+.category {
+    color : white;
 }
 
 /* .results {

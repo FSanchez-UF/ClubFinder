@@ -2,9 +2,6 @@ import React, {useEffect, useState, useRef} from 'react'
 import axios from 'axios'
 import './App.css'
 import Page from './Page.js'
-import Submit from './Submit'
-
-const LOCAL_STORAGE_KEY = 'ClubFinder.data'
 
 const Categories = [{name:'Nursing', selected: false}, {name:'Agricultural and Life Sciences', selected: false}, {name:'Research-Arts', selected: false}, 
                     {name:'Business', selected: false}, {name:'Dentistry', selected: false}, {name:'Design/Construction/Planning', selected: false}, 
@@ -21,21 +18,6 @@ const Categories = [{name:'Nursing', selected: false}, {name:'Agricultural and L
 
 const App = () => {
 
-  // const categorySelectionRef = useRef()
-  // function selectCategory(id) {
-  //   const newcategory = categorySelectionRef.current.value
-
-  // }
-
-  // useEffect(() => {
-  //   const storedSelections = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY))
-  //   if (storedSelections) setSelected(storedSelections)
-  // }, [])
-
-  // useEffect(() => {
-  //   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(selected))
-  // }, [selected])
-
   function selectCategory(name) {
     const newCategories = [...categories]
     const category = newCategories.find(category => category.name === name)
@@ -48,7 +30,6 @@ const App = () => {
   return (
     <>
       <Page categories = {categories} selectCategory={selectCategory}/>
-      <Submit />
     </>
   )
 
@@ -57,17 +38,17 @@ const App = () => {
 export default App
 
 // const [clubs, setClubs] = useState([])
-  // const getData = async() => {
-  //   const res = await axios.get('/Club_Data')
-  //   setClubs(res.data)
-  // }
+//   const getData = async() => {
+//     const res = await axios.get('/Club_Data')
+//     setClubs(res.data)
+//   }
 
-  // useEffect(() => {
-  //   getData()
-  // }, [])
+//   useEffect(() => {
+//     getData()
+//   }, [])
  
-  // return (
-  //   <div>
-  //     {clubs.map(u => <h4 key={u._id}>name : {u.name}</h4>)}
-  //   </div>
-  // )
+//   return (
+//     <div>
+//       {clubs.map(u => <h4 key={u._id}>category : {u.category}</h4>)}
+//     </div>
+//   )
