@@ -12,6 +12,9 @@ const ClubSchema = mongoose.Schema({
     category: {
         type: String,
     },
+    website: {
+        type: String,
+    },
 }, {
     timestamps: true
 })

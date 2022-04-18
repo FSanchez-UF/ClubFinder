@@ -7,3 +7,4 @@ export default function SelectAll({selectAll}) { // Allows user to select all ca
       </div>
   )
 }
+
