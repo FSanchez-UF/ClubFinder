@@ -21,13 +21,24 @@
   },
   "homepage": "https://github.com/BCorbin825/ClubFinder#readme",
   "dependencies": {
+    "axios": "^0.26.1",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^6.2.7"
+    "mongoose": "^6.2.7",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-test-renderer": "^18.0.0"
   },
   "type": "module",
   "devDependencies": {
-    "concurrently": "^7.1.0"
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "concurrently": "^7.1.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
   }
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Category({ category, selectCategory }) {
+export default function Category({ category, checkMarkCategory }) { // Prints checkbox and category name side-by-side
   function CheckboxToggle() {
-    selectCategory(category.name)
+    checkMarkCategory(category.name)
   }
   return (
-    <div className='category'>
+    <div data-testid='category-test' className='category'>
       <input type="checkbox" checked={category.selected} onChange={CheckboxToggle} />
       {category.name}
     </div>
