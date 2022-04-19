@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react'
 import HomePage from '../HomePage'
 import selectCategory from '../App'
 
-test('Checks that a category renders properly', () => {
+test('Checks that homepage renders properly', () => {
     
     const categories = [{name:'Nursing', selected: false}, {name:'Agricultural and Life Sciences', selected: false}, {name:'Research-Arts', selected: false}, 
                     {name:'Business', selected: false}, {name:'Dentistry', selected: false}, {name:'Design/Construction/Planning', selected: false}, 

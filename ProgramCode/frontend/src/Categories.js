@@ -8,5 +8,3 @@ export default function Categories({categories, checkMarkCategory}) { // Loops t
       })
   )
 }
-
-
