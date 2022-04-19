@@ -7,3 +7,4 @@ export default function Clear({clear}) { // Clears all category selections when 
       </div>
     )
   }
+
